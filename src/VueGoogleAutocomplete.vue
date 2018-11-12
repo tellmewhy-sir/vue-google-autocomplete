@@ -1,4 +1,5 @@
 <template>
+    <!-- eslint-disable -->
     <input
         ref="autocomplete"
         type="text"

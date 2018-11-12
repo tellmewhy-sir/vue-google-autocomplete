@@ -1,0 +1,19 @@
+{
+	"root": true,
+	"extends": [
+		"plugin:vue/strongly-recommended"
+	],
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"parserOptions": {
+		"parser": "babel-eslint",
+		"sourceType": "module"
+	},
+	"rules": {
+		"valid-typeof": "warn",
+		"semi": "off"
+	}
+}
