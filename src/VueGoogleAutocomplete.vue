@@ -38,7 +38,7 @@
             required: true
           },
 
-          classname: String,
+          classname: [String, Object],
 
           placeholder: {
             type: String,
@@ -121,15 +121,14 @@
         mounted: function() {
           const options = {};
 
-          /** 
+          /**
            * Take string provided for types and trim any whitespace,
            * Use split() to return an array of strings
            * */
           if (this.types) {
             let trimStr = this.types.replace(/\s+/g, '')
-            let split = trimStr.split(',');            
+            let split = trimStr.split(',');
             options.types = split;
-            // options.types = [this.types];
           }
 
           if (this.country) {
